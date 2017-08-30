@@ -1,6 +1,6 @@
 # flask
 
-コマンドライン上でapp.pyのあるファイルまで移動して
+コマンドライン上で、simpleflaskファイルのなかまで行きsample.pyのあるファイルまで移動して
 
 - python sample.py
 
