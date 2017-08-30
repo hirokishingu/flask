@@ -2,6 +2,6 @@
 
 コマンドライン上でapp.pyのあるファイルまで移動して
 
-- python app.py
+- python sample.py
 
 と打つことで、localhost:5000でwebページが開きます
