@@ -1,7 +1,7 @@
 # flask
 
-コマンドライン上でapp.pyのあるファイルまで移動して
+コマンドライン上で、simpleflaskファイルの中まで行き
 
-- python app.py
+## python sample.py
 
 と打つことで、localhost:5000でwebページが開きます
