@@ -1,0 +1,8 @@
+[INFO  - 2017-08-30T07:30:25.924Z] GhostDriver - Main - running on port 47112
+[INFO  - 2017-08-30T07:30:26.060Z] Session [1749ab50-8d55-11e7-85db-a76490a720d8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (X11; Linux i686) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"}
+[INFO  - 2017-08-30T07:30:26.060Z] Session [1749ab50-8d55-11e7-85db-a76490a720d8] - page.customHeaders:  - {}
+[INFO  - 2017-08-30T07:30:26.060Z] Session [1749ab50-8d55-11e7-85db-a76490a720d8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-30T07:30:26.060Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1749ab50-8d55-11e7-85db-a76490a720d8
+[ERROR - 2017-08-30T07:30:30.917Z] RouterReqHand - _handle.error - {"line":40,"stack":"get\n_find\n_locateElement\n_handleLocateCommand\n_handle\n_reroute\n_handle"}
+[INFO  - 2017-08-30T07:35:26.297Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-30T07:35:26.540Z] SessionManagerReqHand - _cleanupWindowlessSessions - Deleted Session '1749ab50-8d55-11e7-85db-a76490a720d8', because windowless
