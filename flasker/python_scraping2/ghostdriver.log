@@ -1,12 +1,5 @@
-[INFO  - 2017-09-01T07:29:07.100Z] GhostDriver - Main - running on port 47082
-[INFO  - 2017-09-01T07:29:07.893Z] Session [3d85fbf0-8ee7-11e7-916f-afc4c6036c18] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux i686) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-09-01T07:29:07.893Z] Session [3d85fbf0-8ee7-11e7-916f-afc4c6036c18] - page.customHeaders:  - {}
-[INFO  - 2017-09-01T07:29:07.893Z] Session [3d85fbf0-8ee7-11e7-916f-afc4c6036c18] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2017-09-01T07:29:07.894Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 3d85fbf0-8ee7-11e7-916f-afc4c6036c18
-events.js:141
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: read EIO
-    at exports._errnoException (util.js:870:11)
-    at TTY.onread (net.js:544:26)
+[INFO  - 2017-09-01T09:08:34.541Z] GhostDriver - Main - running on port 53686
+[INFO  - 2017-09-01T09:08:35.296Z] Session [225ef670-8ef5-11e7-81cf-1f01ce1ff4f2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux i686) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-01T09:08:35.296Z] Session [225ef670-8ef5-11e7-81cf-1f01ce1ff4f2] - page.customHeaders:  - {}
+[INFO  - 2017-09-01T09:08:35.296Z] Session [225ef670-8ef5-11e7-81cf-1f01ce1ff4f2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-09-01T09:08:35.296Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 225ef670-8ef5-11e7-81cf-1f01ce1ff4f2

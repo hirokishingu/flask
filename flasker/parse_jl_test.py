@@ -4,7 +4,7 @@ import json
 #json_lines での処理。　後でとっとく処理がめんどくさい
 items = None
 
-with open('subprocessTest.jl', 'rb') as f:
+with open('./python_scraping2/subprocessTest.jl', 'rb') as f:
     items = json_lines.reader(f)
     for item in items:
         pass
@@ -23,7 +23,7 @@ for i in json_lines.reader(items):
 
 lines = []
 
-with open('pydocTest.jl', 'r') as f:
+with open('./python_scraping2/pydocTest.jl', 'r') as f:
     for line in f:
         lines.append(json.loads(line))
 for i in lines:
