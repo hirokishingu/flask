@@ -25,12 +25,7 @@ def output():
 		word = request.form["word"]
 		print(word)
 
-		# with open("./python_scraping2/pydocTest.jl", "r") as pr:
-		# 	for line in pr:
-		# 		line = "a"
-		# 		with open("./python_scraping2/pydocTest.jl", "w", encoding="utf-8") as pw:
-		# 			pw.write(line)
-
+		# ファイルを一度削除することで検索結果が重なることを防いでいる
 		if os.path.exists('./python_scraping2/pydocTest.jl'):
 			os.remove('./python_scraping2/pydocTest.jl')
 
