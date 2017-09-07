@@ -2,7 +2,11 @@ import subprocess
 from flask import Flask, render_template, request, redirect, url_for
 import json
 
+from janome.tokenizer import Tokenizer
+
 import os
+
+t = Tokenizer()
 
 app = Flask(__name__)
 
@@ -24,6 +28,11 @@ def output():
 		#json_linesの読み込み
 		word = request.form["word"]
 		print(word)
+
+		# 入力された値を形態素解析する
+		for token in t.tokenize(word):
+			print(token)
+			#ここに形態素された値とキーワードの一致を確認するコードを記述する
 
 		# ファイルを一度削除することで検索結果が重なることを防いでいる
 		if os.path.exists('./python_scraping2/pydocTest.jl'):
