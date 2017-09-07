@@ -20,7 +20,9 @@ def output():
 	if request.method == "POST":
 		#word = request.form["word"]
 		#json_linesの読み込み
-		subprocess.check_output(["scrapy", "crawl", "pydoc", "-o", "pydocTest.jl"], cwd="./python_scraping2")
+		word = request.form["word"]
+		print(word)
+		subprocess.check_output(["scrapy", "crawl", "-a", "categories=" + word, "pydoc", "-o", "pydocTest.jl"], cwd="./python_scraping2")
 		items = []
 		with open('./python_scraping2/pydocTest.jl', 'r') as f:
 		    for line in f:

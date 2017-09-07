@@ -5,6 +5,10 @@
   <title>Document</title>
 </head>
 <body>
+  <form action="/input" method="get">
+    <input type="submit" value="戻る" />
+  </form>
+
   <p>検索ワード:{{word}}</p>
   {%for item in items%}
     <p>{{item["title"]}}</p>

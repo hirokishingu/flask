@@ -5,13 +5,23 @@ from selenium.webdriver import PhantomJS
 from selenium.webdriver.common.keys import Keys
 import time
 
+import sys
+
+import re
+
 driver = PhantomJS()
+
+word = sys.argv[-4]
+
+word = word[11:]
+print(word)
 
 class SeleniumMiddleware(object):
     def process_request(self, request, spider):
         driver.get(request.url)
         input_element = driver.find_element_by_name('q')
-        input_element.send_keys('for')
+        print("\n" + word + "\n")
+        input_element.send_keys(word)
         input_element.send_keys(Keys.ENTER)
         time.sleep(5)
         return HtmlResponse(driver.current_url,
@@ -19,7 +29,7 @@ class SeleniumMiddleware(object):
             encoding = 'utf-8',
             request = request)
 
-#def searchKeyword(): 
+#def searchKeyword():
 #    input_element = driver.find_element_by_name('q')
 #    input_element.send_keys('for')
 #    input_element.send_keys(Keys.ENTER)
