@@ -2,6 +2,8 @@ import subprocess
 from flask import Flask, render_template, request, redirect, url_for
 import json
 
+import os
+
 app = Flask(__name__)
 
 
@@ -22,6 +24,19 @@ def output():
 		#json_linesの読み込み
 		word = request.form["word"]
 		print(word)
+
+		# with open("./python_scraping2/pydocTest.jl", "r") as pr:
+		# 	for line in pr:
+		# 		line = "a"
+		# 		with open("./python_scraping2/pydocTest.jl", "w", encoding="utf-8") as pw:
+		# 			pw.write(line)
+
+		if os.path.exists('./python_scraping2/pydocTest.jl'):
+			os.remove('./python_scraping2/pydocTest.jl')
+
+		if not os.path.exists('./python_scraping2/pydocTest.jl'):
+			open('./python_scraping2/pydocTest.jl', "w")
+
 		subprocess.check_output(["scrapy", "crawl", "-a", "categories=" + word, "pydoc", "-o", "pydocTest.jl"], cwd="./python_scraping2")
 		items = []
 		with open('./python_scraping2/pydocTest.jl', 'r') as f:
